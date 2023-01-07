@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1><%= @pet.color.capitalize %> <%= @pet.species %></h1>
+      <h6 class="card-subtitle mb-2 text-muted">📍 <%= @pet.address %></h6>
+      <p class="card-text">Found by <%= @pet.contact_name %></p>
+      <p class="card-text"><%= pluralize(@pet.found_days_ago, 'day') %> ago.</p>
+      <%= link_to "Back", pets_path %>
+    </div>
+  </div>
+</div>
